@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --white-color: #fff;
+    --primary-color: #ff7800;
+    --black-color: #130f40;
+    --light-color: #666;
+    --background-color: #eee;
+    --box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    --boder-color: 2px solid rgba(0, 0, 0, 0.1);
+    --outline-color: 1px solid rgba(0, 0, 0, 0.1);
+    --outline-hover-color: 2px solid var(--black-color);
+
+    --header-height: 6.4rem;
+    --header-mobile-height: 5.6rem;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 70rem;
+    /* overflow-x: hidden; */
+}
+
+body {
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn {
+    margin-top: 1.6rem;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    border: 2px solid var(--black-color);
+    color: var(--black-color);
+    cursor: pointer;
+    background: none;
+    display: inline-block;
+    transition: all ease 0.3s;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn-special {
+    display: block;
+}
+
+.heading {
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+    font-size: 3.6rem;
+    color: var(--black-color);
+}
+
+.heading__primary {
+    background: var(--primary-color);
+    color: var(--white-color);
+    display: inline-block;
+    padding: 5px 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0 100%, 7% 50%, 0 0);
+}
+
+.tag {
+    outline: var(--outline-color);
+    outline-offset: -1rem;
+    background: var(--white-color);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    padding: 3rem 2rem;
+    transition: all linear 0.2s;
+    margin-top: 1.6rem;
+    border-radius: 2px;
+}
+
+.tag:hover {
+    outline: var(--outline-hover-color);
+    outline-offset: 0;
+}

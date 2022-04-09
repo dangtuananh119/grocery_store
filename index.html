@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+
+    <!-- Icon link -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- GG font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Css link -->
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- Start: Header -->
+    <header class="header">
+        <a href="#" class="header__logo"><i class='header__logo-icon bx bxs-basket'></i>Groco</a>
+        <ul class="header__nav">
+            <li class="header__nav-item">
+                <a href="#home" class="header__nav-link">Home</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#features" class="header__nav-link">Features</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#products" class="header__nav-link">Products</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#categories" class="header__nav-link">Categories</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#review" class="header__nav-link">Review</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="#blogs" class="header__nav-link">Blogs</a>
+            </li>
+        </ul>
+
+        <div class="header__icon-list">
+            <button class='header__icon-item bx bx-menu' id="header__menu-btn"></button>
+            <button class='header__icon-item bx bx-search' id="header__search-btn"></button>
+            <button class='header__icon-item bx bx-cart' id="header__cart-btn"></button>
+            <button class='header__icon-item bx bx-user-circle' id="header__user-btn"></button>
+        </div>
+      
+        <div class="header__search-form">
+            <input type="search" placeholder="Search here..." id="" class="header__search-input">
+            <i class='header__search-form-icon bx bx-search'></i>
+        </div>
+        
+        <div class="header__cart-form">
+            <div class="header__cart-item">
+                <img src="./assets/img/Header__cart-img/cart-img-1.png" alt="Watermelon" class="header__cart-item-img">
+                <div class="header__cart-content">
+                    <h3 class="header__cart-title">Watermelon</h3>
+                    <span class="header__cart-price">$4.99</span>
+                    <span class="header__cart-quantity"><i class='bx bx-x'></i>1</span>
+                </div>
+                <i class='header__cart-trash bx bx-trash'></i>
+            </div>
+            <div class="header__cart-item">
+                <img src="./assets/img/Header__cart-img/cart-img-2.png" alt="Onion" class="header__cart-item-img">
+                <div class="header__cart-content">
+                    <h3 class="header__cart-title">Onion</h3>
+                    <span class="header__cart-price">$4.99</span>
+                    <span class="header__cart-quantity"><i class='bx bx-x'></i>1</span>
+                </div>
+                <i class='header__cart-trash bx bx-trash'></i>
+            </div>
+            <div class="header__cart-item">
+                <img src="./assets/img/Header__cart-img/cart-img-3.png" alt="Chicken" class="header__cart-item-img">
+                <div class="header__cart-content">
+                    <h3 class="header__cart-title">Chicken</h3>
+                    <span class="header__cart-price">$4.99</span>
+                    <span class="header__cart-quantity"><i class='bx bx-x'></i>1</span>
+                </div>
+                <i class='header__cart-trash bx bx-trash'></i>
+            </div>
+            <div class="header__cart-total">Total: $19.69</div>
+            <a href="#" class="btn header__cart-btn">Checkout</a>
+        </div>
+        
+        <div class="header__login-form">
+            <h3 class="header__login-title">Login now</h3>
+            <input type="email" placeholder="Your email" class="header__login-input">
+            <input type="password" placeholder="Your password" class="header__login-input">
+            <p class="header__login-text">Forget your password? <a href="#" class="header__login-link">Click here.</a></p>
+            <p class="header__login-text">Don't have an account? <a href="#" class="header__login-link">Create now.</a></p>
+            <input type="submit" value="Login now" class="btn header__login-btn">
+        </div>
+    </header>
+    <!-- End: Header -->
+
+    <!-- Start: Home -->
+    <section id="home" class="home">
+        <div class="home__content">
+            <h3 class="home__title">Fresh and <span class="home__title--primary">organic</span> products for your</h3>
+            <p class="home__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quis amet dolorum asperiores dolores beatae.</p>
+            <a href="#" class="btn home__link">Shop now</a>
+        </div>
+    </section>
+    <!-- End: Home -->
+
+    <!-- Start: Feature -->
+    <section id="features" class="feature">
+        <h2 class="heading">Our <span class="heading__primary">features</span></h2>
+        <div class="feature__container">
+            <ul class="feature__list">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-6 c-12">
+                            <li class="tag feature__item">
+                                <img src="./assets/img/Features/feature-img-1.png" alt="Fresh and organic img" class="feature__item-img">
+                                <h3 class="feature__item-title">Fresh and organic</h3>
+                                <div class="feature__item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                                <button class="btn feature__item-btn">Read more</button>
+                            </li>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <li class="tag feature__item">
+                                <img src="./assets/img/Features/feature-img-2.png" alt="Free delivery img" class="feature__item-img">
+                                <h3 class="feature__item-title">Free delivery</h3>
+                                <div class="feature__item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                                <button class="btn feature__item-btn">Read more</button>
+                            </li>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <li class="tag feature__item">
+                                <img src="./assets/img/Features/feature-img-3.png" alt="Easy payments img" class="feature__item-img">
+                                <h3 class="feature__item-title">Easy payments</h3>
+                                <div class="feature__item-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                                <button class="btn feature__item-btn">Read more</button>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div> 
+    </section>
+    <!-- End: Feature -->
+
+    <!-- Start: Product -->
+    <section id="products" class="product">
+        <h2 class="heading">Our <span class="heading__primary">products</span></h2>
+        <div class="product__container">
+            <ul class="product__list">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-6 c-12">
+                            <li class="tag product__item">
+                                <img src="./assets/img/Products/product-1.png" alt="Orange" class="product__item-img">
+                                <h3 class="product__item-title">Fresh orange</h3>
+                                <div class="product__item-price">$4.99 - $10.99</div>
+                                <div class="product__item-stars">
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                </div>
+                                <button class="btn">Add to cart</button>
+                            </li>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <li class="tag product__item">
+                                <img src="./assets/img/Products/product-2.png" alt="Orange" class="product__item-img">
+                                <h3 class="product__item-title">Fresh onion</h3>
+                                <div class="product__item-price">$4.99 - $10.99</div>
+                                <div class="product__item-stars">
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                </div>
+                                <button class="btn">Add to cart</button>
+                            </li>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <li class="tag product__item">
+                                <img src="./assets/img/Products/product-3.png" alt="Orange" class="product__item-img">
+                                <h3 class="product__item-title">Fresh meat</h3>
+                                <div class="product__item-price">$4.99 - $10.99</div>
+                                <div class="product__item-stars">
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                </div>
+                                <button class="btn">Add to cart</button>
+                            </li>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <li class="tag product__item">
+                                <img src="./assets/img/Products/product-4.png" alt="Orange" class="product__item-img">
+                                <h3 class="product__item-title">Fresh cabbage</h3>
+                                <div class="product__item-price">$4.99 - $10.99</div>
+                                <div class="product__item-stars">
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                </div>
+                                <button class="btn">Add to cart</button>
+                            </li>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <li class="tag product__item">
+                                <img src="./assets/img/Products/product-5.png" alt="Orange" class="product__item-img">
+                                <h3 class="product__item-title">Fresh potato</h3>
+                                <div class="product__item-price">$4.99 - $10.99</div>
+                                <div class="product__item-stars">
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                </div>
+                                <button class="btn">Add to cart</button>
+                            </li>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <li class="tag product__item">
+                                <img src="./assets/img/Products/product-6.png" alt="Orange" class="product__item-img">
+                                <h3 class="product__item-title">Fresh avocado</h3>
+                                <div class="product__item-price">$4.99 - $10.99</div>
+                                <div class="product__item-stars">
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                </div>
+                                <button class="btn">Add to cart</button>
+                            </li>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <li class="tag product__item">
+                                <img src="./assets/img/Products/product-7.png" alt="Orange" class="product__item-img">
+                                <h3 class="product__item-title">Fresh carrot</h3>
+                                <div class="product__item-price">$4.99 - $10.99</div>
+                                <div class="product__item-stars">
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                </div>
+                                <button class="btn">Add to cart</button>
+                            </li>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <li class="tag product__item">
+                                <img src="./assets/img/Products/product-8.png" alt="Orange" class="product__item-img">
+                                <h3 class="product__item-title">Green lemon</h3>
+                                <div class="product__item-price">$4.99 - $10.99</div>
+                                <div class="product__item-stars">
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                    <i class='product__item-star bx bxs-star'></i>
+                                </div>
+                                <button class="btn">Add to cart</button>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <!-- Start: Product -->
+
+    <!-- Start: Category -->
+    <section id="categories" class="category">
+        <h2 class="heading">Product <span class="heading__primary">categories</span></h2>
+        <div class="category__container">
+            <ul class="category__list">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12">
+                            <li class="tag category__item">
+                                <img src="./assets/img/Categories/cat-1.png" alt="Vegetable" class="category__item-img">
+                                <h3 class="category__item-title">Vegetables</h3>
+                                <p class="category__item-sale">Upto 45% off</p>
+                                <button class="btn">Shop now</button>
+                            </li>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <li class="tag category__item">
+                                <img src="./assets/img/Categories/cat-2.png" alt="Vegetable" class="category__item-img">
+                                <h3 class="category__item-title">Fresh fruits</h3>
+                                <p class="category__item-sale">Upto 45% off</p>
+                                <button class="btn">Shop now</button>
+                            </li>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <li class="tag category__item">
+                                <img src="./assets/img/Categories/cat-3.png" alt="Vegetable" class="category__item-img">
+                                <h3 class="category__item-title">Dairy products</h3>
+                                <p class="category__item-sale">Upto 45% off</p>
+                                <button class="btn">Shop now</button>
+                            </li>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <li class="tag category__item">
+                                <img src="./assets/img/Categories/cat-4.png" alt="Vegetable" class="category__item-img">
+                                <h3 class="category__item-title">Fresh meat</h3>
+                                <p class="category__item-sale">Upto 45% off</p>
+                                <button class="btn">Shop now</button>
+                            </li>  
+                        </div>                 
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <!-- End: Category -->
+
+    <!-- Start: Review -->
+    <section id="review" class="review">
+        <h2 class="heading">Customer's <span class="heading__primary">review</span></h2>
+        <div class="review__container">
+            <ul class="review__list">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12">
+                            <li class="tag review__item">
+                                <img src="./assets/img/Review/pic-1.png" alt="Vegetable" class="review__item-img">
+                                <h3 class="review__item-name">John Deo</h3>
+                                <p class="review__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="review__item-stars">
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <li class="tag review__item">
+                                <img src="./assets/img/Review/pic-2.png" alt="Vegetable" class="review__item-img">
+                                <h3 class="review__item-name">John Deo</h3>
+                                <p class="review__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="review__item-stars">
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <li class="tag review__item">
+                                <img src="./assets/img/Review/pic-3.png" alt="Vegetable" class="review__item-img">
+                                <h3 class="review__item-name">John Deo</h3>
+                                <p class="review__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="review__item-stars">
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <li class="tag review__item">
+                                <img src="./assets/img/Review/pic-4.png" alt="Vegetable" class="review__item-img">
+                                <h3 class="review__item-name">John Deo</h3>
+                                <p class="review__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="review__item-stars">
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                    <i class='review__item-star bx bxs-star'></i>
+                                </div>
+                            </li>  
+                        </div>                 
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <!-- End: Review -->
+
+    <!-- Start: Blog -->
+    <section id="blogs" class="blog">
+        <h2 class="heading">Our <span class="heading__primary">blogs</span></h2>
+        <div class="blog__container">
+            <ul class="blog__list">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-6 c-12">
+                            <li class="blog__item">
+                                <img src="./assets/img/Blog/blog-1.jpg" alt="Vegetable" class="blog__item-img">
+                                <div class="blog__content">
+                                    <div class="blog__icons">
+                                        <div class="blog__icon-wrap">
+                                            <i class='blog__icon bx bxs-user'></i>
+                                            By: Admin
+                                        </div>
+                                        <div class="blog__icon-wrap">
+                                            <i class='blog__icon bx bx-calendar' ></i>
+                                            19th December, 2021
+                                        </div>
+                                    </div>
+                                    <h3 class="blog__item-title">Fresh and organic vegitables and fruits</h3>
+                                    <p class="blog__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn">Read more</button>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <li class="blog__item">
+                                <img src="./assets/img/Blog/blog-2.jpg" alt="Vegetable" class="blog__item-img">
+                                <div class="blog__content">
+                                    <div class="blog__icons">
+                                        <div class="blog__icon-wrap">
+                                            <i class='blog__icon bx bxs-user'></i>
+                                            By: Admin
+                                        </div>
+                                        <div class="blog__icon-wrap">
+                                            <i class='blog__icon bx bx-calendar' ></i>
+                                            19th December, 2021
+                                        </div>
+                                    </div>
+                                    <h3 class="blog__item-title">Fresh and organic vegitables and fruits</h3>
+                                    <p class="blog__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn">Read more</button>
+                                </div>
+                            </li>
+                        </div>
+                        <div class="col l-4 m-6 c-12">
+                            <li class="blog__item">
+                                <img src="./assets/img/Blog/blog-3.jpg" alt="Vegetable" class="blog__item-img">
+                                <div class="blog__content">
+                                    <div class="blog__icons">
+                                        <div class="blog__icon-wrap">
+                                            <i class='blog__icon bx bxs-user'></i>
+                                            By: Admin
+                                        </div>
+                                        <div class="blog__icon-wrap">
+                                            <i class='blog__icon bx bx-calendar' ></i>
+                                            19th December, 2021
+                                        </div>
+                                    </div>
+                                    <h3 class="blog__item-title">Fresh and organic vegitables and fruits</h3>
+                                    <p class="blog__item-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn">Read more</button>
+                                </div>
+                            </li>
+                        </div>              
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </section>
+    <!-- End: Blog -->
+
+    <!-- Start: Footer -->
+    <section class="footer">
+        <div class="footer__container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__item">
+                            <h3 class="footer__title"><i class='footer__logo bx bxs-basket'></i>Groco</h3>
+                            <p class="footer__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+                            <div class="footer__share">
+                                <a href="#" class="footer__share-link">
+                                    <i class='footer__share-icon bx bxl-facebook'></i>
+                                </a>
+                                <a href="#" class="footer__share-link">
+                                    <i class='footer__share-icon bx bxl-youtube' ></i>
+                                </a>
+                                <a href="#" class="footer__share-link">
+                                    <i class='footer__share-icon bx bxl-twitter' ></i>
+                                </a>
+                                <a href="#" class="footer__share-link">
+                                    <i class='footer__share-icon bx bxl-instagram'></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__item">
+                            <h3 class="footer__title">Contact info</h3>
+                            <div class="footer__item-link-wrap">
+                                <a href="#" class="footer__item-link">
+                                    <i class='footer__item-icon bx bxs-phone'></i>
+                                    +123-456-7890
+                                </a>
+                                <a href="#" class="footer__item-link">
+                                    <i class='footer__item-icon bx bxs-phone'></i>
+                                    +111-222-3333
+                                </a>
+                                <a href="#" class="footer__item-link">
+                                    <i class='footer__item-icon bx bx-envelope'></i>
+                                    tuananh.dang119@gmail.com
+                                </a>
+                                <a href="#" class="footer__item-link">
+                                    <i class='footer__item-icon bx bx-map'></i>
+                                    Vĩnh Phúc, Việt Nam
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__item">
+                            <h3 class="footer__title">Quick links</h3>
+                            <div class="footer__item-link-wrap">
+                                <a href="#" class="footer__item-link">
+                                    <i class='footer__item-icon bx bx-right-arrow-alt'></i>
+                                    Home
+                                </a>
+                                <a href="#" class="footer__item-link">
+                                    <i class='footer__item-icon bx bx-right-arrow-alt'></i>
+                                    Features
+                                </a>
+                                <a href="#" class="footer__item-link">
+                                    <i class='footer__item-icon bx bx-right-arrow-alt'></i>
+                                    Products
+                                </a>
+                                <a href="#" class="footer__item-link">
+                                    <i class='footer__item-icon bx bx-right-arrow-alt'></i>
+                                    Categories
+                                </a>
+                                <a href="#" class="footer__item-link">
+                                    <i class='footer__item-icon bx bx-right-arrow-alt'></i>
+                                    Review
+                                </a>
+                                <a href="#" class="footer__item-link">
+                                    <i class='footer__item-icon bx bx-right-arrow-alt'></i>
+                                    Blog
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <div class="footer__item">
+                            <h3 class="footer__title">Newsletter</h3>
+                            <p class="footer__body">Subscribe for latest updates</p>
+                            <input type="email" placeholder="Your email" class="footer__item-email">
+                            <input type="submit" value="Subscribe" class="btn btn-special">
+                            <img src="./assets/img/payment.png" class="footer__item-payment" alt="Payment">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">
+                Created by <a href="#" class="footer__copyright-link">Dang Tuan Anh</a>
+                All rights reserved
+            </p>
+        </div>
+    </section>
+    <!-- End: Footer -->
+
+    <script src="./assets/main.js"></script>
+</body>
+</html>
